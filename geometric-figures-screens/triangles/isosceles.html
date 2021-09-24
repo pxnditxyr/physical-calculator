@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" href="../../assets/css/index.css">
         <title> Physical Calculator </title>
     </head>
     <body>
         <header>
             <nav>
-                <a href="./" class="active"> Home </a>
+                <a href="/" class="active"> Home </a>
                 <a href="./geometric-figures-screens/square.html"> Square </a>
                 <a href="./geometric-figures-screens/triangle.html"> Triangle </a>
                 <a href="./geometric-figures-screens/circle.html"> Circle </a>
@@ -19,23 +19,41 @@
             </nav>
         </header>
         <main>
+
             <article class="card">
                 <section class="card-image">
-                    <img src="./assets/images/calculator-hero.jpg" />
+                    <img src="../../assets/images/isosceles.png" />
                 </section>
+
                 <section class="card-container">
                     <section class="card-title">
                         <h2> Physical Calculator </h2>
-                        <p> Choose the desired geometric figure </p>
+                        <p> Isosceles Triangle </p>
                     </section>
+
+                    <section class="operation-container">
+                        <label for="lado-triangulo-iguales">Lados del triangulo iguales</label>
+                        <input type="text" id="lado-triangulo-iguales" placeholder="Ingrese una cantidad en centimetros">
+                        <label for="lado-triangulo-diferente">Lado del triangulo diferente</label>
+                        <input type="text" id="lado-triangulo-diferente" placeholder="Ingrese una cantidad en centimetros">
+                        <div class="operation-container__resultado">
+                          <span>Resultado</span>
+                          <p id="resultado"></p>
+                        </div>
+                    </section>
+
                     <section class="card-options">
-                        <button> <a href="./geometric-figures-screens/square.html"> Square </a> </button>
-                        <button> <a href="./geometric-figures-screens/triangle.html"> Triangle </a> </button>
-                        <button> <a href="./geometric-figures-screens/circle.html"> Circle </a> </button>
-                        <button> <a href="./geometric-figures-screens/cylinder.html"> Cylinder </a> </button>
+                        <button class="button-container__payment" type="button" onclick="calcularAreaIsosceles()" >Calcular el área</button>
+                        <button class="button-container__payment" type="button" onclick="calcularPerimetroIsosceles()">Calcular el perimetro</button>
+                        <a href="/">
+                          <button class="button-container__cancel">Cancelar</button>
+                        </a>
                     </section>
+
                 </section>
+
             </article>
+
         </main>
         <footer>
             <a href="mailto:pxnditxyr@gmail.com"> Enrique Ricaldi </a>
@@ -43,6 +61,6 @@
             <a href=""> Erick Silva</a>
             <p> Copyright 2021 </p>
         </footer>
-        <script src="./assets/js/index.js"></script>
+        <script src="../../assets/js/triangles.js"></script>
     </body>
 </html>
