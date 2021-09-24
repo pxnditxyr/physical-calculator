@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../assets/css/index.css">
+        <link rel="stylesheet" href="/assets/css/index.css">
         <title> Physical Calculator </title>
     </head>
     <body>
@@ -17,29 +17,38 @@
         </header>
         <main>
             <article class="card">
-                <section class="card-imagen">
-                    <img src="../assets/images/equilateral.png" />
+                <section class="card-image">
+                    <img src="/assets/images/equilateral.png" />
                 </section>
-                <section class="card-title">
-                    <h2> Physical Calculator </h2>
-                    <p> Equilateral Triangle </p>
+
+                <section class="card-container">
+                    <section class="card-title">
+                        <h2> Physical Calculator </h2>
+                        <p> Isosceles Triangle </p>
+                    </section>
+
+                    <section class="operation-container">
+                        <label for="lado-triangulo">Lados del triangulo </label>
+                        <input type="text" id="lado-triangulo" placeholder="Ingrese una cantidad en centimetros">
+                        <div class="operation-container__resultado">
+                          <span>Resultado</span>
+                          <p id="resultado"></p>
+                        </div>
+                    </section>
+
+                    <section class="card-options">
+                        <button class="button-container__payment" type="button" onclick="calcularAreaEquilatero()" >Calcular el área</button>
+                        <button class="button-container__payment" type="button" onclick="calcularPerimetroEquilatero()">Calcular el perimetro</button>
+                        <a href="/">
+                          <button class="button-container__cancel">Cancelar</button>
+                        </a>
+                    </section>
+
                 </section>
-                <section class="operation-container">
-                    <label for="lado-triangulo">Lado del triangulo</label>
-                    <input type="text" id="lado-triangulo" placeholder="Ingrese una cantidad en centimetros">
-                    <div class="operation-container__resultado">
-                      <span>Resultado</span>
-                      <p id="resultado"></p>
-                    </div>
-                </section>
-                <section class="button-container">
-                    <button class="button-container__payment" type="button" onclick="calcularAreaEquilatero()" >Calcular el área</button>
-                    <button class="button-container__payment" type="button" onclick="calcularPerimetroEquilatero()">Calcular el perimetro</button>
-                    <a href="/">
-                      <button class="button-container__cancel">Cancelar</button>
-                    </a>
-                </section>
+
             </article>
+.
+
         </main>
         <footer>
             <a href="mailto:pxnditxyr@gmail.com"> Enrique Ricaldi </a>
@@ -47,6 +56,6 @@
             <a href=""> Erick Silva</a>
             <p> Copyright 2021 </p>
         </footer>
-        <script src="../assets/js/triangles.js"></script>
+        <script src="/assets/js/triangles.js"></script>
     </body>
 </html>
